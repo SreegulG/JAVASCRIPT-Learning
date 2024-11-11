@@ -24,4 +24,5 @@ console.log(t, q, r);
 
 //  constant declaration
 const pi = 3.14;
+
 console.log(pi);
