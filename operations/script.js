@@ -1,4 +1,4 @@
-// Assigment operator(=)
+// Assignment operator(=)
 
 let a = 10;
 let b = c = 8;
@@ -42,3 +42,16 @@ console.log(x);
 
 x /= 3
 console.log(x);
+
+// comparison operators
+
+console.log(2 == 2);
+console.log(2 != 2);
+console.log(2 > 4);
+console.log(2 >= 4);
+console.log(2 < 4);
+console.log(2 <= 2);
+console.log('2' == 2);
+console.log('2' === 2);
+console.log('1' != 1);
+console.log('1' !== 1);
