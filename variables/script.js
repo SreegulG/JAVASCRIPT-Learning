@@ -21,3 +21,8 @@ console.log(a, b, c);
 
 let t = 'abc', q = 23, r = 100;
 console.log(t, q, r);
+
+//  constant declaration
+const pi = 3.14;
+
+console.log(pi);
