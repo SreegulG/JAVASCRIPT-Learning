@@ -1,5 +1,6 @@
 let s = "abcdefgh abc";
 
+console.log(s.__proto__);
 // charat
 console.log(s.charAt(2));
 
@@ -19,3 +20,6 @@ console.log(s.indexOf('b', 8));
 // replace
 console.log(s.replace('a', 'xy'));
 console.log(s);
+
+
+console.log("ADWHD".toLowerCase());
