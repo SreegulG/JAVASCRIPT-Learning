@@ -69,24 +69,36 @@ while (i <= 10) {
 // }
 // while (randNum != guessNum);
 
-function compoundInterest(principalAmount, annualInterestRate, numberOfYears) {
-  let answer;
+function sumOfPrimeNumbers(limit) {
+  let answer = 0; // Variable to store the sum of all prime numbers
 
-  // Initialize the answer variable with the principal amount
-  answer = parseFloat(principalAmount);
-  // create and initialize a year counter to 1
-  let i = 1;
-  // Use a while loop to calculate the total amount over the specified number of years
-  let intrest = 1;
-  while (i <= numberOfYears) {
-    intrest *= (1 + annualInterestRate);
-    i++;
+  // Iterate through all numbers from 0 to the given limit
+
+  // Inside the first loop create a variable to count the number of divisors of i
+
+  // Check how many numbers divide i without a remainder by using nested loop
+
+
+  // If count equals 2, then i is a prime number
+  isPrime = true;
+  for (let i = 2; i <= limit; i++) {
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) {
+        isPrime = false;
+        break;
+      }
+
+    }
+    if (isPrime) {
+      console.log(i);
+      answer += i;
+    }
+    isPrime = true;
   }
-  answer = intrest * answer;
 
-
-  // Return the final amount after all years
+  // Return the sum of all prime numbers between 0 and limit
   return answer;
 }
 
-console.log(compoundInterest('500$', 0.08, 5));
+
+console.log(sumOfPrimeNumbers(50));
